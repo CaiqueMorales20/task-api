@@ -1,6 +1,6 @@
 import type { Task } from '@prisma/client'
 
-import { prisma } from '../prisma/script'
+import prisma from '../prisma/script'
 import type { ITaskService } from '../types/task-service'
 
 class TaskService implements ITaskService {
@@ -16,7 +16,7 @@ class TaskService implements ITaskService {
       return createdTask
     } catch (err) {
       console.error('Error creating task:', err)
-      return null
+      throw new Error('Error creating task')
     }
   }
 
@@ -35,7 +35,7 @@ class TaskService implements ITaskService {
       return updatedTask
     } catch (err) {
       console.error('Error updating task:', err)
-      return null
+      throw new Error('Error updating task')
     }
   }
 
@@ -48,7 +48,7 @@ class TaskService implements ITaskService {
       return deletedTask
     } catch (err) {
       console.error('Error deleting task:', err)
-      return null
+      throw new Error('Error deleting task')
     }
   }
 
@@ -59,7 +59,7 @@ class TaskService implements ITaskService {
       return allTasks
     } catch (err) {
       console.error('Error fetching all tasks:', err)
-      return null
+      throw new Error('Error fetching all tasks')
     }
   }
 
@@ -75,7 +75,7 @@ class TaskService implements ITaskService {
       return completedTask
     } catch (err) {
       console.error('Error marking task as completed:', err)
-      return null
+      throw new Error('Error marking task as completed')
     }
   }
 }
