@@ -1,0 +1,13 @@
+{
+  "name": "task-api",
+  "module": "src/server.ts",
+  "type": "module",
+  "devDependencies": {
+    "@rocketseat/eslint-config": "^2.2.2",
+    "@types/bun": "latest",
+    "eslint-plugin-simple-import-sort": "^12.1.1"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
