@@ -5,9 +5,13 @@
   "devDependencies": {
     "@rocketseat/eslint-config": "^2.2.2",
     "@types/bun": "latest",
-    "eslint-plugin-simple-import-sort": "^12.1.1"
+    "eslint-plugin-simple-import-sort": "^12.1.1",
+    "prisma": "^5.20.0"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@prisma/client": "5.20.0"
   }
 }
