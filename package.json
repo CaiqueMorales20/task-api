@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "bun run --watch src/server.ts",
     "start": "bun run src/server.ts",
-    "test": "jest"
+    "test": "jest",
+    "build": "bun build --target bun src/server.ts"
   },
   "devDependencies": {
     "@rocketseat/eslint-config": "^2.2.2",
