@@ -15,7 +15,6 @@ class TaskService implements ITaskService {
 
       return createdTask
     } catch (err) {
-      console.error('Error creating task:', err)
       throw new Error('Error creating task')
     }
   }
@@ -34,7 +33,6 @@ class TaskService implements ITaskService {
 
       return updatedTask
     } catch (err) {
-      console.error('Error updating task:', err)
       throw new Error('Error updating task')
     }
   }
@@ -47,7 +45,6 @@ class TaskService implements ITaskService {
 
       return deletedTask
     } catch (err) {
-      console.error('Error deleting task:', err)
       throw new Error('Error deleting task')
     }
   }
@@ -58,7 +55,6 @@ class TaskService implements ITaskService {
 
       return allTasks
     } catch (err) {
-      console.error('Error fetching all tasks:', err)
       throw new Error('Error fetching all tasks')
     }
   }
@@ -74,7 +70,6 @@ class TaskService implements ITaskService {
 
       return completedTask
     } catch (err) {
-      console.error('Error marking task as completed:', err)
       throw new Error('Error marking task as completed')
     }
   }
